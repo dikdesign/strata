@@ -18,10 +18,11 @@
             </a> 
             <h1 class="main-header-title">
                 Trabalhos e groselhas de <br>
-                <strong>Daniel Tapias Morales</strong>,<br> 
-                um zé ninguém qualquel<br>
-                Retirado de <a href="http://html5up.net" class="main-header-link">html5up.net</a>.
-            </h1>            
+                <strong>Daniel Tapias Morales</strong>,
+                um zé ninguém qualquel              
+            </h1>
+            <p>Retirado de <a href="http://html5up.net" class="main-header-link">html5up.net</a>
+            </p>          
         </header>
         
         <main class="main-content"> 
@@ -31,7 +32,7 @@
                 <h2>Quando o header é aside e o aside é no header</h2>
                 <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p> 
                 
-                <a href="#" title="Veja mais" class="button-default">Veja mais</a>
+                <a href="#" title="Veja mais" class="button-default button-default-stroke button-default-big">Veja mais</a>
                 
             </section>
             
@@ -128,17 +129,17 @@
                     <div class="col-1-3">
                         <address>
                             <p>
-                              <span>Endereço</span>
+                              <span>Endereço  </span>
                                 1234 Somewhere Rd. Nashville, TN 00000 United States
                             </p>
         
                             <p>
-                              <span>Telefone</span>
+                              <span>Telefone  </span>
                                 000-000-000
                             </p>
         
                             <p>
-                              <span>Email</span>
+                              <span>Email  </span>
                                 email@server.com
                             </p>
         
@@ -165,7 +166,8 @@
                     <h6>Titulo h6</h6>                    
                     
                     <blockquote cite="http://developer.mozilla.org">
-                      Esta é uma citação tirada da Mozilla Developer Center.
+                      <p> é uma citação tirada da Mozilla Developer Center.</p>
+                        <p>outros paragráfos</p>
                     </blockquote>
 
                     <p>According to Mozilla's website,
@@ -173,13 +175,11 @@
                     </p>
 
                     <h4>Preformatado</h4>
-                    <pre>
-                        <code>
-                 &lt;script&gt;
-                   alert('oi');
-                 &lt;script&gt;
-                        </code>
-                    </pre>
+                    <pre><code>
+ &lt;script&gt;
+     alert('oi');
+ &lt;script&gt;
+           </code></pre>
 
                     <h4>Listas</h4>
 
@@ -211,7 +211,7 @@
 
                             <h5>Icons</h5>
                             <ul class="ul-icons">
-                                <li><i class="fab fa-twitter"></i></li>
+                                <li><span class="hidden">twitter</span><i class="fab fa-twitter"></i></li>
                                 <li><i class="fab fa-facebook-f"></i></li>
                                 <li><i class="fab fa-whatsapp"></i></li>
                             </ul>
@@ -368,31 +368,34 @@
 
                     <h5>Forms</h5>
 
-                    <label for="name">Nome</label>
-                    <input type="text" name="name" id="name">
+                    <form action="#" method="post">
 
-                    <label for="name">Email</label>
-                    <input type="text" name="email" id="email">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name">
 
-                    <select>
-                        <option value="0">Selecione ...</option>
-                        <option value="1">HTML</option>
-                        <option value="2">CSS</option>
-                        <option value="3">Javascript</option>
-                    </select>
+                        <label for="name">Email</label>
+                        <input type="text" name="email" id="email">
 
-                    <label><input type="radio" value="baixa" name="prioridade">Baixa Prioridade</label>
-                    <label><input type="radio" value="edia" name="prioridade">Média Prioridade</label>
-                    <label><input type="radio" value="alta" name="prioridade">Alta Prioridade</label>
+                        <select>
+                            <option value="0">Selecione ...</option>
+                            <option value="1">HTML</option>
+                            <option value="2">CSS</option>
+                            <option value="3">Javascript</option>
+                        </select>
 
-                    <label> <input type="checkbox" name="copy" value="1">Envie-me uma cópia</label>
-                    <label> <input type="checkbox" name="human" value="1">Sou Humano Mensagem:</label>
+                        <label><input type="radio" value="baixa" name="prioridade">Baixa Prioridade</label>
+                        <label><input type="radio" value="edia" name="prioridade">Média Prioridade</label>
+                        <label><input type="radio" value="alta" name="prioridade">Alta Prioridade</label>
 
-                    <label for="msg">Mensagem:</label>
-                    <textarea placeholder="digite uma mensagem" id="msg" cols="30" rows="10"></textarea>
+                        <label> <input type="checkbox" name="copy" value="1">Envie-me uma cópia</label>
+                        <label> <input type="checkbox" name="human" value="1">Sou Humano Mensagem:</label>
 
-                    <input type="submit" class="button-default" value="Enviar">
-                    <input type="reset" class="button-default button-default-stroke button-default-big" value="Limpar">
+                        <label for="msg">Mensagem:</label>
+                        <textarea placeholder="digite uma mensagem" id="msg" cols="30" rows="10"></textarea>
+
+                        <input type="submit" class="button-default" value="Enviar">
+                        <input type="reset" class="button-default button-default-stroke button-default-big" value="Limpar">
+                    </form>
 
                 </section>
 
@@ -427,7 +430,16 @@
                 </section>
 
         </main>
-        <footer class="main-footer"></footer>
+        <footer class="main-footer">
+
+            <ul class="ul-icons">
+                <li><a href="#" class="icon-link"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" class="icon-link"><span class="hidden">Facebook</span><i class="fab fa-facebook-square"></i></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>© Unititled></li> <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </footer>
      
     </body>
 </html>
